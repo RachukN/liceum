@@ -1,13 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Task2</title>
     <style>
-        
+        .dws {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate (-50%, 50%);
+            -moz-transform: translate (-50%, -50%) ras-transform translate (-50%, -50%);
+            -o-transform: translate (-50%, -50%);
+            transform: translate (-50%, -50%);
+        }
+
+        .butt {
+            border: 3px solid rgb(67, 124, 209);
+            font-size: 30px;
+            color: rgb(67, 124, 209);
+            text-decoration: none;
+            text-transform: uppercase;
+            width: 250px;
+            height: 60px;
+            display: block;
+            text-align: center;
+            line-height: 60px;
+            position: relative;
+            transform: .5s;
+            overflow: hidden;
+        }
+
+        .butt::before,
+        .butt::after {
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 100%;
+            background: rgb(67, 124, 209);
+            top: 0;
+            left: -100%;
+            opacity: .5;
+            transition: .3s;
+            z-index: -1;
+        }
+
+        .butt:hover {
+            color: white;
+        }
+
+        .butt::after {
+            opacity: 1;
+            transition-delay: .2s;
+        }
+
+        .butt:hover::before,
+        .butt:hover::after {
+            left: 0;
+        }
     </style>
 </head>
+
 <body>
-    
+<div class="dws">
+<a href="https://github.com/RachukN/liceum/tree/master/homework_2_" class="butt">Кнопачка</a>
+</div>
 </body>
+
 </html>
