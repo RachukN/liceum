@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background: url(./images/img.png);
+    
+
+}
+
+body.ubgraid {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: orangered;
+    background: url(./images/img.png);
+    color: white;
+    width: 60%;
+            margin: 20px auto;
+
+}
+
+a:active {
+    color: red;
+}
+
+a:hover,
+a:visited {
+    color: white;
+}
+
+p {
+    color: white;
+    font-size: 16pt;
+    font-weight: 700;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+span {
+    font-family: "Monotype Corsiva", Times, Serif;
+    font-size: 14pt;
+    text-align: center;
+
+}
+div{
+    margin: 0 auto;
+}
+.btn {
+    border: 3px solid red;
+    font-size: 20px;
+    color: red;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 400px;
+    height: 60px;
+    display: block;
+    text-align: center;
+    line-height: 60px;
+    
+    
+}
+
+td {
+    text-align: center;
+}
