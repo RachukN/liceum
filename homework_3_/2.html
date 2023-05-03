@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Обрахуноки квадрата</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+</head>
+
+<body class="bg-dark text-white p-2">
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="nav-link active" href="main.html">HOME</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="1.html">Example 1</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="2.html">Example 2</a>
+    </li>
+
+  </ul>
+  <h1 class=" text-center col-auto rounded btn-primary p-1 m-2"> Обрахуноки квадрата</h1>
+  <div class="col-auto mt-3">
+    <div class="input-group mb-2">
+      <div class="input-group-prepend">
+        <div class="input-group-text">Сторона квадрата:</div>
+      </div>
+      <input type="number" class="form-control" id="a" placeholder="123" required>
+    </div>
+  </div>
+
+
+  <div class="col-auto mt-3">
+    <input type="button" class="btn btn-primary mb-2" value="ОБРАХУВАТИ" onclick="rez()">
+
+    <div class="btn btn-primary mb-2 ml-3 ">
+      Площа <span class="badge badge-light"> <span id="textrez1"></span></span>
+      <span>cм</span>
+    </div>
+
+
+    <div class="btn btn-primary mb-2 ml-3 ">
+      Периметр <span class="badge badge-light"> <span id="textrez2"></span></span>
+      <span>cм</span>
+    </div>
+
+
+    <div class="btn btn-primary mb-2 ml-3 ">
+      Діагональ <span class="badge badge-light"> <span id="textrez3"></span></span>
+      <span>cм</span>
+    </div>
+
+
+    <div class="btn btn-primary mb-2 ml-3 ">
+      Радіус вписаного кола <span class="badge badge-light"> <span id="textrez4"></span></span>
+      <span>cм</span>
+    </div>
+
+
+    <div class="btn btn-primary mb-2 ml-3 ">
+      Радіус описаного кола <span class="badge badge-light"> <span id="textrez5"></span></span>
+      <span>cм</span>
+
+    </div>
+  </div>
+  </form>
+
+  <script>
+    function rez() {
+      var a, result1, result2, result3, result4, result5;
+      a = document.getElementById('a').value;
+      result1 = (a * a);
+      result2 = (4 * a);
+      result3 = (a )*Math.sqrt(2);
+      result4 = (a / 2);
+      result5 = (a )*(Math.sqrt(2)/2);
+      result1 = result1.toFixed(2);
+      result2 = result2.toFixed(2);
+      result3 = result3.toFixed(2);
+      result4 = result4.toFixed(2);
+      result5 = result5.toFixed(2);
+      document.getElementById('textrez1').innerHTML = result1;
+      document.getElementById('textrez2').innerHTML = result2;
+      document.getElementById('textrez3').innerHTML = result3;
+      document.getElementById('textrez4').innerHTML = result4;
+      document.getElementById('textrez5').innerHTML = result5;
+    }
+  </script>
+
+</html>

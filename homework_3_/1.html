@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обрахунок гіпотенузи</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<body class=" bg-dark text-white p-2">
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link active" href="main.html">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="1.html">Example 1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="2.html">Example 2</a>
+        </li>
+        
+      </ul>
+      <h1 class=" text-center col-auto rounded btn-primary p-1 m-2"> Обрахунок гіпотенузи</h1>
+    <div class="col-auto mt-3">
+        <div class="input-group mb-2">
+            <div class="input-group-prepend">
+                <div class="input-group-text">катет 1:</div>
+            </div>
+            <input type="number" class="form-control" id="k1" placeholder="123" required>
+        </div>
+    </div>
+    <div class="col-auto mt-3" >
+
+        <div class="input-group mb-2">
+            <div class="input-group-prepend">
+                <div class="input-group-text">катет 2:</div>
+            </div>
+            <input type="number" class="form-control" id="k2" placeholder="123" required>
+        </div>
+    </div>
+    <div class="col-auto">
+
+    </div>
+    <div class="col-auto mt-3">
+        <input type="button" class="btn btn-primary mb-2" value="ОБРАХУВАТИ" onclick="rez()">
+
+        <div class="btn btn-primary mb-2 ml-3 ">
+            Довжина гіпотенузи <span class="badge badge-light" > <span id="textrez"></span></span>
+            <span>cм</span>
+        </div>
+    </div>
+
+</form>
+
+<script>
+    function rez() {
+        var k1, k2, result;
+        k1 = document.getElementById('k1').value;
+        k2 = document.getElementById('k2').value;
+        result = Math.sqrt(k1 * k1 + k2 * k2);
+        result = result.toFixed(2);
+        document.getElementById('textrez').innerHTML = result;
+    }
+</script>
+</body>
+</html>
