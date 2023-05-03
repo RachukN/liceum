@@ -8,7 +8,11 @@
   <title>Обрахуноки квадрата</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+<style>
+  li{
+    margin: 3px;
+  }
+</style>
 
 </head>
 
@@ -35,40 +39,41 @@
     </div>
   </div>
 
-
+  
   <div class="col-auto mt-3">
     <input type="button" class="btn btn-primary mb-2" value="ОБРАХУВАТИ" onclick="rez()">
-
-    <div class="btn btn-primary mb-2 ml-3 ">
-      Площа <span class="badge badge-light"> <span id="textrez1"></span></span>
-      <span>cм</span>
-    </div>
-
-
-    <div class="btn btn-primary mb-2 ml-3 ">
-      Периметр <span class="badge badge-light"> <span id="textrez2"></span></span>
-      <span>cм</span>
-    </div>
-
-
-    <div class="btn btn-primary mb-2 ml-3 ">
-      Діагональ <span class="badge badge-light"> <span id="textrez3"></span></span>
-      <span>cм</span>
-    </div>
-
-
-    <div class="btn btn-primary mb-2 ml-3 ">
-      Радіус вписаного кола <span class="badge badge-light"> <span id="textrez4"></span></span>
-      <span>cм</span>
-    </div>
-
-
-    <div class="btn btn-primary mb-2 ml-3 ">
-      Радіус описаного кола <span class="badge badge-light"> <span id="textrez5"></span></span>
-      <span>cм</span>
-
-    </div>
   </div>
+  <div class="col-md-6 offset-md-3 mt-3">
+    <div class="input-group mb-2">
+      <div class="input-group-prepend">
+        <div class=" col-auto card bg-secondary" style="width: 27rem;">
+          <img class="card-img-top" src="square (1).png" alt="Card image cap">
+            </div>
+            <ul class="list-group  list-group-flush">
+              <li class="rounded list-group-item bg-secondary"><div class="btn btn-primary mb-2 ml-3 ">
+                Площа <span class="badge badge-light"> <span id="textrez1"></span></span>
+                <span>cм</span>
+              </div></li>
+              <li class="rounded bg-secondary list-group-item"><div class="btn btn-primary mb-2 ml-3 ">
+                Периметр <span class="badge badge-light"> <span id="textrez2"></span></span>
+                <span>cм</span>
+              </div></li>
+              <li class="rounded bg-secondary list-group-item"><div class="btn btn-primary mb-2 ml-3 ">
+                Діагональ <span class="badge badge-light"> <span id="textrez3"></span></span>
+                <span>cм</span>
+              </div></li>
+              <li class="rounded bg-secondary list-group-item"> <div class="btn btn-primary mb-2 ml-3 ">
+                Радіус вписаного кола <span class="badge badge-light"> <span id="textrez4"></span></span>
+                <span>cм</span>
+              </div></li>
+              <li class="rounded bg-secondary list-group-item"> <div class="btn btn-primary mb-2 ml-3 ">
+                Радіус описаного кола <span class="badge badge-light"> <span id="textrez5"></span></span>
+                <span>cм</span></li>
+            </ul></div>
+  </div>
+    
+  
+  
   </form>
 
   <script>
